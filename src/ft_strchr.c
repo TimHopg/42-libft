@@ -3,21 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thopgood <thopgood@student.42.fr>          +#+  +:+       +#+        */
+/*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 19:36:39 by thopgood          #+#    #+#             */
-/*   Updated: 2024/04/23 15:18:12 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/05/05 12:57:50 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-
-Returns a pointer to the first occurrence of c in string s incl. '\0'.
-Returns NULL if c is not found.
-
-*/
-
 #include "../include/libft.h"
+
+/*
+ * Returns a pointer to the first occurrence of c in string s incl. '\0'.
+ * Returns NULL if c is not found.
+*/
 
 char	*ft_strchr(const char *s, int c)
 {

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: thopgood <thopgood@student.42.fr>          +#+  +:+       +#+         #
+#    By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/18 19:27:57 by thopgood          #+#    #+#              #
-#    Updated: 2024/04/23 16:55:54 by thopgood         ###   ########.fr        #
+#    Updated: 2024/05/04 16:15:08 by thopgood         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
