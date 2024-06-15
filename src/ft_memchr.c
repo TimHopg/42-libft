@@ -3,21 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thopgood <thopgood@student.42.fr>          +#+  +:+       +#+        */
+/*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 20:58:35 by thopgood          #+#    #+#             */
-/*   Updated: 2024/04/23 15:18:12 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:55:57 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
-
-Searches for c within s in first n bytes of memory.
-memchr returns a ptr to the first occurrence of c or NULL if not found.
-
+ * Searches for c within s in first n bytes of memory.
+ * memchr returns a ptr to the first occurrence of c or NULL if not found.
 */
-
-#include "../include/libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

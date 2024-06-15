@@ -3,20 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putbase_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thopgood <thopgood@student.42.fr>          +#+  +:+       +#+        */
+/*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 16:47:12 by thopgood          #+#    #+#             */
-/*   Updated: 2024/04/23 16:53:36 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:54:04 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
-
-outputs int n in base to file fd
-
-*/
-
-#include "../include/libft.h"
+ * outputs int n in base to file fd
+ */
 
 void	ft_putbase_fd(int n, const char *base, int fd)
 {

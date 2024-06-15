@@ -3,22 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thopgood <thopgood@student.42.fr>          +#+  +:+       +#+        */
+/*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 11:58:15 by thopgood          #+#    #+#             */
-/*   Updated: 2024/04/23 15:18:12 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:59:06 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
-
-Applies function f to each character of string s.
-f takes index as first arg and char as second.
-Returns new mallocated string, NULL if fails.
-
-*/
-
-#include "../include/libft.h"
+ * Applies function f to each character of string s.
+ * f takes index as first arg and char as second.
+ * Returns new mallocated string, NULL if fails.
+ */
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

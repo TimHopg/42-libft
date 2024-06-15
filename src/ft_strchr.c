@@ -6,16 +6,16 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 19:36:39 by thopgood          #+#    #+#             */
-/*   Updated: 2024/05/05 12:57:50 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:42:00 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 /*
  * Returns a pointer to the first occurrence of c in string s incl. '\0'.
  * Returns NULL if c is not found.
-*/
+ */
 
 char	*ft_strchr(const char *s, int c)
 {

@@ -3,22 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thopgood <thopgood@student.42.fr>          +#+  +:+       +#+        */
+/*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 09:53:42 by thopgood          #+#    #+#             */
-/*   Updated: 2024/04/23 16:54:33 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:49:57 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /* 
-
-Integer to ASCII
-Returns a mallocated string representing the integer passed as an argument.
-Returns NULL if allocation fails.
-
-*/
-
-#include "../include/libft.h"
+ * Integer to ASCII
+ * Returns a mallocated string representing the integer passed as an argument.
+ * Returns NULL if allocation fails.
+ */
 
 static size_t	ft_numlen(long n)
 {
@@ -72,5 +70,5 @@ int	main(void)
 	int n;
 
 	n = INT_MIN;
-	printf("%s res\n", ft_itoa(n));
+	ft_printf("%s res\n", ft_itoa(n));
 } */

@@ -3,21 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thopgood <thopgood@student.42.fr>          +#+  +:+       +#+        */
+/*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 16:34:02 by thopgood          #+#    #+#             */
-/*   Updated: 2024/04/23 17:08:59 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:57:06 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
-
-Splits string 's' by delimiter char 'c' and mallocs array of new strings.
-Returns array terminated with NULL pointer. NULL if fails
-
-*/
-
-#include "../include/libft.h"
+ * Splits string 's' by delimiter char 'c' and mallocs array of new strings.
+ * Returns array terminated with NULL pointer. NULL if fails
+ */
 
 static size_t	ft_countwords(char const *str, char const *set)
 {
@@ -110,11 +108,11 @@ int	main(void)
 	str = " ";;
 	c = ' ';
 	words = ft_split(str, c);
-	printf(":%s:\n", words[0]);
-	printf(":%s:\n", words[1]);
-	printf(":%s:\n", words[2]);
-	printf(":%s:\n", words[3]);
-	printf(":%s:\n", words[4]);
-	printf(":%s:\n", words[5]);
+	ft_printf(":%s:\n", words[0]);
+	ft_printf(":%s:\n", words[1]);
+	ft_printf(":%s:\n", words[2]);
+	ft_printf(":%s:\n", words[3]);
+	ft_printf(":%s:\n", words[4]);
+	ft_printf(":%s:\n", words[5]);
 }
 */

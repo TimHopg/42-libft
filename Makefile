@@ -6,20 +6,23 @@
 #    By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/18 19:27:57 by thopgood          #+#    #+#              #
-#    Updated: 2024/05/04 16:15:08 by thopgood         ###   ########.fr        #
+#    Updated: 2024/06/15 00:43:42 by thopgood         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC			= cc
-CFLAGS		= -Wall -Wextra -Werror
-LIBC		= ar -rcs
 NAME		= libft.a
-HEADER		= ../include/libft.h
-SRC_DIR		= src
+CC			= cc
+CFLAGS		= -Wall -Wextra -Werror -Iinclude
 RM			= rm -rf
+LIBC		= ar -rcs
 
-SRC			= $(addprefix $(SRC_DIR)/, \
-				ft_isalpha.c \
+# Directories
+SRC_DIR		= src/
+OBJ_DIR 	= obj/
+HEADER		= include/libft.h
+
+# Sources
+SRC			= 	ft_isalpha.c \
 				ft_isdigit.c \
 				ft_isalnum.c \
 				ft_isascii.c \
@@ -52,14 +55,10 @@ SRC			= $(addprefix $(SRC_DIR)/, \
 				ft_putchar_fd.c \
 				ft_putstr_fd.c \
 				ft_putendl_fd.c \
-				ft_putnbr_fd.c)
-
-EXTRA_SRC	= $(addprefix $(SRC_DIR)/,\
+				ft_putnbr_fd.c \
 				ft_isspace.c \
 				ft_putbase_fd.c \
-				ft_abs.c)
-
-BONUS_SRC	= $(addprefix $(SRC_DIR)/,\
+				ft_abs.c \
 				ft_lstnew.c \
 				ft_lstadd_front.c \
 				ft_lstsize.c \
@@ -68,38 +67,36 @@ BONUS_SRC	= $(addprefix $(SRC_DIR)/,\
 				ft_lstdelone.c \
 				ft_lstclear.c \
 				ft_lstiter.c \
-				ft_lstmap.c)
+				ft_lstmap.c \
+				ft_printf.c \
+				ft_printf_utils.c \
+				ft_printf_utils2.c \
+				get_next_line.c \
+				get_next_line_utils.c \
+				# putnbr_base.c
 
-OBJ			= $(SRC:.c=.o) $(EXTRA_SRC:.c=.o)
+OBJ			= $(addprefix $(OBJ_DIR), $(SRC:.c=.o))
 
-BONUS_OBJ	= $(BONUS_SRC:.c=.o)
 
-%.o: %.c $(HEADER)
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c
+	@mkdir -p $(OBJ_DIR)
 	@$(CC) $(CFLAGS) -c $< -o $@
 
-all: $(NAME)
 
 $(NAME): $(OBJ)
-	@echo -n ""${BLUE}$(NAME)""${NC}Archiving... ""
+	@echo ""${BLUE}$(NAME)""${NC}Archiving... "\c"
 	@$(LIBC) $(NAME) $(OBJ)
 	@echo ""${GREEN}OK""$(NC)""
-
-bonus: $(BONUS_OBJ) $(OBJ)
-	@echo -n ""${BLUE}$(NAME)" "$(YELLOW)[bonus]""${NC}Archiving... ""
-	@if make OBJ="$(OBJ) $(BONUS_OBJ)" all \
-	| grep -q "Nothing"; then \
-	echo "\nmake: Nothing to be done for 'bonus'."; \
-	else \
-		echo ""${GREEN}OK${NC}""; \
-	fi
+	
+all: $(NAME)
 
 clean:
-	@$(RM) $(BONUS_SRC:.c=.o) $(SRC:.c=.o) $(EXTRA_SRC:.c=.o)
+	@$(RM) $(OBJ_DIR)
 
 fclean: clean
 	@$(RM) $(NAME)
 
-re: fclean $(NAME)
+re: fclean all
 
 .PHONY: all clean fclean re bonus
 

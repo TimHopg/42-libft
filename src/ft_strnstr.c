@@ -3,26 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thopgood <thopgood@student.42.fr>          +#+  +:+       +#+        */
+/*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 19:17:24 by thopgood          #+#    #+#             */
-/*   Updated: 2024/04/23 15:18:12 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:58:30 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
-
-Needle in haystack. Locates little string within big string if found within
-	first len bytes.
-
-Returns:
-- Pointer to first occurrence
-- NULL if not found
-- Pointer to big if little == 0
-
-*/
-
-#include "../include/libft.h"
+ * Needle in haystack. Locates little string within big string if found within
+ * first len bytes.
+ * Returns:
+ * - Pointer to first occurrence
+ * - NULL if not found
+ * - Pointer to big if little == 0
+ */
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
