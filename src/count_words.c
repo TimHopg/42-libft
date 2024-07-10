@@ -1,30 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   count_words.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/23 16:22:06 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 01:15:37 by thopgood         ###   ########.fr       */
+/*   Created: 2024/06/28 21:46:09 by thopgood          #+#    #+#             */
+/*   Updated: 2024/06/28 23:25:52 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * mallocates and returns new node with member variable 'content' taking
- * the value of the parameter 'content'.
+ * Returns number of words in string split by chars defined in set.
  */
 
-t_list	*ft_lstnew(void *content)
+int count_words(char *str, char *set)
 {
-	t_list	*new_node;
-
-	new_node = malloc(sizeof(t_list));
-	if (new_node == NULL)
-		return (NULL);
-	new_node->next = NULL;
-	new_node->content = content;
-	return (new_node);
+    int count = 0;
+	
+    while (*str && ft_strchr(set, *str))
+        ++str;
+    while (*str)
+	{
+        ++count;
+        while (*str && !ft_strchr(set, *str))
+            ++str;
+        while (*str && ft_strchr(set, *str))
+            ++str;
+    }
+    return count;
 }

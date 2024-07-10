@@ -1,56 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/15 00:31:03 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/30 17:43:10 by thopgood         ###   ########.fr       */
+/*   Created: 2024/06/15 00:31:10 by thopgood          #+#    #+#             */
+/*   Updated: 2024/06/15 00:40:12 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#ifndef BUFFER_SIZE
-# define BUFFER_SIZE 42
-#endif
-
-int		ft_clean_buffer(char *buffer);
-size_t	ft_strlen_gnl(char *s);
-char	*ft_strjoin_gnl(char *s1, char *s2);
-
-/*
- * Checks for negative (or zero) BUFFER_SIZE. Then performs read fail check
- * Clears pertinent fd and returns NULL if read returns error (-1).
- * Reads from buffer and returns new line.
- * EDIT: GNL now modifies the line sent as an argument to allow the return of
- * error codes. 1 = read success, 0 = EOF, -1 = error.
- */
-
-int get_next_line(int fd, char **line)
-{
-	static char	buffer[FOPEN_MAX][BUFFER_SIZE + 1];
-
-	if (BUFFER_SIZE <= 0)
-		return (-1);
-	if (read(fd, 0, 0) < 0)
-	{
-		if (fd < 0 || fd >= FOPEN_MAX)
-			return (-1);
-		buffer[fd][0] = '\0';
-		return (-1);
-	}
-	*line = NULL;
-	while ((buffer[fd][0] || read(fd, buffer[fd], BUFFER_SIZE) > 0))
-	{
-		*line = ft_strjoin_gnl(*line, buffer[fd]);
-		if (ft_clean_buffer(buffer[fd]) == 1)
-			break ;
-	}
-	if (*line == NULL)
-		return (0);
-	return (1);
-}
 
 /*
  * Iterates over buffer and sets each char to 0 until newline is encountered.
