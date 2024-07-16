@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 11:38:05 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 00:51:16 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:37:40 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
  * Iterates through list 'lst' and applies function 'f' to each node.
  */
-
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*curr;

@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 20:26:08 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 00:45:43 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:36:29 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
  * Returns true if char is between 0 and 9
  */
-
 int	ft_isdigit(int c)
 {
 	return ('0' <= c && c <= '9');

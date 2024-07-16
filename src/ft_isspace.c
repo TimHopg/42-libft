@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 16:28:19 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 00:45:14 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:36:26 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
  * Returns true if char is horizontal tab, line feed, vertical tab, form feed
  * carriage return or space, false otherwise.
  */
-
 int	ft_isspace(char c)
 {
 	return (('\t' <= c && c <= '\r') || c == ' ');

@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 16:52:24 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 00:56:08 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:36:20 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
  *returns the absolute value of a long
  */
-
 long	ft_abs(long n)
 {
 	long	n_long;

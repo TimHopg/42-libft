@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 13:44:12 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 00:50:47 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:37:33 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
  * Iterates list 'lst' and applies function 'f' to the contents of each node.
  * A new list is created from the result.
  */
-
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_lst;

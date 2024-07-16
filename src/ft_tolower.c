@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 17:29:57 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 01:01:44 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:38:37 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
  * Converts uppercase char to lower
  */
-
 int	ft_tolower(int c)
 {
 	if ('A' <= c && c <= 'Z')

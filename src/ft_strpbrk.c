@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 21:20:15 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/29 15:39:23 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:38:43 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
  * Implementation of string pointer break. Returns pointer to first occurrence
  * of any char from s2 in s1
  */
-
 char	*ft_strpbrk(const char *s1, const char *s2)
 {
 	while (*s1)

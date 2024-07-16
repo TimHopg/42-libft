@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 10:37:25 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 00:44:53 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:36:40 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
  * Converts ASCII to integer. Ignores leading white space. Handles single +/-
  * which determines positive or negative number.
  */
-
 int	ft_atoi(const char *nptr)
 {
 	int	output;

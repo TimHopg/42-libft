@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 16:22:06 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 01:15:37 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:37:26 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
  * mallocates and returns new node with member variable 'content' taking
  * the value of the parameter 'content'.
  */
-
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_node;

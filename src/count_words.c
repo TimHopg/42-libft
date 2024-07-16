@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 21:46:09 by thopgood          #+#    #+#             */
-/*   Updated: 2024/07/11 10:25:56 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:36:12 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
  * Returns number of words in string split by chars defined in set.
  */
-
 int	count_words(char *str, char *set)
 {
 	int	count;

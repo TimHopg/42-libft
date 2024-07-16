@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 17:57:55 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 00:59:21 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:38:50 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
  * Returns size_t length of string excl. '\0'
  */
-
 size_t	ft_strlen(const char *s)
 {
 	size_t	len;

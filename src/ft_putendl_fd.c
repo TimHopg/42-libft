@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:59:39 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 00:53:34 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:39:08 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
  * Outputs string 's' to given file descriptor followed by a newline.
  */
-
 void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);

@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 17:42:02 by thopgood          #+#    #+#             */
-/*   Updated: 2024/06/15 00:57:54 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:38:41 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
  * Returns pointer to last occurrence of c in string s or NULL if not found.
  */
-
 char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
