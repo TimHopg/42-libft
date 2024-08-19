@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 16:11:03 by thopgood          #+#    #+#             */
-/*   Updated: 2024/07/16 21:38:54 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 01:00:23 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
  * strlcat returns the length of the string that would have been created if there
  * was enough size. If return >= size truncation has occurred.
  */
+
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;

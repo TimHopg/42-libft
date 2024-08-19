@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 00:31:10 by thopgood          #+#    #+#             */
-/*   Updated: 2024/07/16 21:38:33 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:40:12 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
  * Iterates over buffer and sets each char to 0 until newline is encountered.
  * Then copies each char after nl to beginning of buffer until '\0'.
  */
+
 int	ft_clean_buffer(char *buffer)
 {
 	int	i;
@@ -36,11 +37,11 @@ int	ft_clean_buffer(char *buffer)
 	}
 	return (is_newline);
 }
-
 /*
  * ft_strlen_gnl edited to return length of string to either '\n' incl or '\0'.
  * Returns 0 if str doesn't exist.
  */
+
 size_t	ft_strlen_gnl(char *str)
 {
 	size_t	i;
@@ -63,6 +64,7 @@ size_t	ft_strlen_gnl(char *str)
  * While chars exist on s2, they are copied to res, from res[0] if !s1 and from
  * the end of
  */
+
 char	*ft_strjoin_gnl(char *s1, char *s2)
 {
 	char	*res;

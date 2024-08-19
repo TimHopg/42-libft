@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 14:03:04 by thopgood          #+#    #+#             */
-/*   Updated: 2024/07/16 21:39:07 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:53:24 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 /*
  * Outputs integer 'n' to given file descriptor.
  */
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	char const	*base;

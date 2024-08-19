@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 11:57:52 by thopgood          #+#    #+#             */
-/*   Updated: 2024/07/16 21:36:36 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:48:40 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
  * for an array of elements (nitems) of 'size' size.
  * Returns a pointer to the allocated memory.
  */
+
 void	*ft_calloc(size_t nitems, size_t size)
 {
 	void	*mem;

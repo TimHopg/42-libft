@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 18:36:56 by thopgood          #+#    #+#             */
-/*   Updated: 2024/07/16 21:38:40 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:57:36 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
  * from the beginning and end.
  * Returns a ptr to the trimmed string or NULL if it fails
  */
+
 static size_t	ft_offsetstart(const char *str, char const *set)
 {
 	size_t	offset_start;

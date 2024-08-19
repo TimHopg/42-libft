@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 19:54:53 by thopgood          #+#    #+#             */
-/*   Updated: 2024/07/16 21:38:52 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:59:57 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
  * if (strlcpy(dst, src, dstsize) >= dstsize)
  * 		return −1;	
  */
+
 size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 {
 	const char	*src_ptr;

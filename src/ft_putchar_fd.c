@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 13:47:42 by thopgood          #+#    #+#             */
-/*   Updated: 2024/07/16 21:39:09 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:53:50 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 /*
  * Writes char c to given file descriptor.
  */
+
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);

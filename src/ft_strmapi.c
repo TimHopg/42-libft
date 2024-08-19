@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 11:58:15 by thopgood          #+#    #+#             */
-/*   Updated: 2024/07/16 21:38:48 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:59:06 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
  * f takes index as first arg and char as second.
  * Returns new mallocated string, NULL if fails.
  */
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*res;

@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 18:50:03 by thopgood          #+#    #+#             */
-/*   Updated: 2024/07/16 21:37:05 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/06/15 00:55:53 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
  * Returns 0 if blocks are equal, a negative value if s1 < s2 and a positive
  * value if s1 > s2.
  */
+
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*p1;
