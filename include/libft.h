@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 19:24:25 by thopgood          #+#    #+#             */
-/*   Updated: 2024/08/19 16:06:39 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/08/19 19:51:56 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -393,7 +393,7 @@ char				*ft_strpbrk(const char *s1, const char *s2);
  */
 int					count_words(char *str, char *set);
 
-// ft_printf
+// * ft_printf Functions
 # define HEXUPPER_BASE "0123456789ABCDEF"
 # define HEXLOWER_BASE "0123456789abcdef"
 # define HEX_PREF "0x"
