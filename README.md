@@ -15,7 +15,7 @@ A [42 School](https://www.42network.org/) project to create a static library of 
 Git clone the repository:
 
 ```shell
-https://github.com/TimHopg/libft_new.git
+https://github.com/TimHopg/42-libft-Library-Forty-Two.git
 ```
 
 Run `make` from within the directory to archive the `libft.a` static library file.
