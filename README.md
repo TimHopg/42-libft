@@ -1,4 +1,6 @@
-# 42-libft-Library-Forty-Two
+# 42-libft
+
+A C Lang library
 
 ## Table of Contents
 
