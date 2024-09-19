@@ -2,6 +2,8 @@
 
 A C Lang library
 
+![libft_grade](libft_grade.png)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
