@@ -1,4 +1,4 @@
-# 42-libft
+# 42-Libft
 
 A C Lang library
 
