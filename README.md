@@ -2,7 +2,7 @@
 
 A C Lang library
 
-![libft_grade](libft_grade.png)
+![libft_grade](./libft_grade.png)
 
 ## Table of Contents
 
