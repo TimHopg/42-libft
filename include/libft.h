@@ -6,7 +6,7 @@
 /*   By: thopgood <thopgood@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 19:24:25 by thopgood          #+#    #+#             */
-/*   Updated: 2024/08/19 19:51:56 by thopgood         ###   ########.fr       */
+/*   Updated: 2024/12/11 14:48:16 by thopgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,31 +32,31 @@ typedef struct s_list
 // * Lib C Functions
 /** @brief Checks if c is alphabetic.
  *  @param c int representing char to be checked
- *  @return true (1) or false (2)
+ *  @return true (1) or false (0)
  */
 int					ft_isalpha(int c);
 
 /** @brief Checks if c is numeric.
  *  @param c int representing char to be checked
- *  @return true (1) or false (2)
+ *  @return true (1) or false (0)
  */
 int					ft_isdigit(int c);
 
 /** @brief Checks if c is alphanumeric.
  *  @param c int representing char to be checked
- *  @return true (1) or false (2)
+ *  @return true (1) or false (0)
  */
 int					ft_isalnum(int c);
 
 /** @brief Checks if c is ASCII valid char (0 - 127).
  *  @param c int representing char to be checked
- *  @return true (1) or false (2)
+ *  @return true (1) or false (0)
  */
 int					ft_isascii(int c);
 
 /** @brief Checks if c is printable char incl space.
  *  @param c int representing char to be checked
- *  @return true (1) or false (2)
+ *  @return true (1) or false (0)
  */
 int					ft_isprint(int c);
 
@@ -356,7 +356,7 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 
 /** @brief Checks if c is a whitespace character.
  *  @param c Character to be checked.
- *  @return true (1) or false (2).
+ *  @return true (1) or false (0).
  */
 int					ft_isspace(char c);
 
